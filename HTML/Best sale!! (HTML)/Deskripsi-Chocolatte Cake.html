@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Best sale!! (CSS)/Deskripsi-Chocolatte Cake.css"> <!-- Sambungkan dengan file CSS -->
+</head>
+<body>
+    <section class="Menu" id="menu">
+        <div class="Menu-container">
+          <div class="box">
+            <img src="../../assets/Chocolatte-Cake.png" alt="">
+            <h1>Chocolatte Cake</h1>
+           <div class="isian">
+            <h2>
+              Bahan-bahan:
+            </h2>
+            <h4>
+             <ul style="list-style-type: circle">
+              <h3>Chocolate Cake :</h3>
+              <li>4 Butir Telur.</li>
+              <li>120 Gram Gula Pasir.</li>
+              <li>1 Sdt Emulsifier/Sp/ovalet.</li>
+              <li>120 Gram Tepung Terigu.</li> 
+              <li>35 Gram Coklat Bubuk.</li>
+              <li>1/2 Sdt Garam.</li>
+              <li>1/2 Sdt Vanilly Bubuk.</li>
+              <li>80 Ml Minyak Sayur.</li>
+              <li>70 Gram DCC/Coklat Batang.</li>
+              <li>1 Sdm Margarin.</li>
+              <h3>Bahan Coklat Ganache :</h3>
+              <li>200 Gram DCC/Coklat Batang.</li>
+              <li>100 Ml Susu Cair.</li>
+              <li>1 Sdm Margarin.</li>
+              <h3>Bahan Pelengkap :</h3>
+              <li>Secukupnya Buttercream.</li>
+              <li>Secukupnya Selai Blueberry.</li>
+              <li>Secukupnya Permen Mutiara.</li>
+             </ul>
+            </h4>
+           <br>
+           <h2>
+             Cara Membuat:
+            </h2>
+            <h4>
+             <ol>
+              <li>Membuat Chocolate Cake : Campur Bahan Kering,Seperti : Tepung Terigu,Coklat Bubuk,Garam,Dan Vanilli Bubuk Aduk Rata.Sisihkan. Kemudian Lelehkan Coklat Dan Margarin,Sisihkan Juga.</li>
+              <li>Mix Telur,Gula dan Emulsifier Hingga Mengembang,Kental Berjejak.Masukan Campuran Tepung Sedikit demi sedikit sambil diayak.Aduk dengan kecepatan paling rendah.</li>
+              <li>Kemudian Masukan Minyak dan aduk kembali sebentar saja.Matikan Mixer.Masukan Coklat leleh,aduk menggunakan spatula,adukan balik.</li>
+              <li>Masukan adonan kedalam loyang yg diolesi margarin dan tepung/dilambari kertas roti (Loyang ukuran 18cm tinggi 8cm).Hentakkan,Kukus Hingga Matang.Jangan Lupa,tutupnya diberi kain,agar uap tidak menetes ke atas kue.Tes tusuk,jika Tidak Lengket angkat dan dinginkan.</li>
+              <li>Untuk membuat ganache : panaskan susu cair jangan sampai mendidih, cukup hangat saja.Kemudian masukan coklat,Aduk hingga meleleh.Kemudian masukan margarin dan aduk terus hingga dingin.Jika Ingin hasil mengkilap,harus sering diaduk ya saat margarin dimasukan.</li>
+              <li>Potong kue menjadi 2,olesi dengan selai blueberry dan buttercream. Lumuri semua permukaan kue dengan buttercream.</li>
+              <li>Kemudian beri coklat Ganache di atas dan pinggiran kuenya.Kemudian hias sesuai selera.Aku memberi permen mutiara di atas kue.Kue Chocolate enakpun siap dinikmati.</li>
+             </ol>
+            </h4>
+           </div>
+          </div>
+
+          <div class="Button">
+            <a href="../JunkCafe.html">--Back--</a>
+          </div>
+
+          <div class="Button">
+            <button type="submit" onclick="openPopup()">--Buy--</button>
+            
+           <div class="popup" id="popUp">
+
+            <img src="../../assets/tick.png">
+            <h2>Terima kasih telah membeli!</h2>
+            <p>Yukk, monggo di beli juga menu lainnya!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+           </div>
+          </div>
+          
+        </div>
+      </section>
+
+  <script>
+   let popup = document.getElementById("popUp");
+   
+   function openPopup(){
+    popup.classList.add("open-popup");
+   }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+   }
+
+  </script>    
+</body>
+</html>

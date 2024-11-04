@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Best sale!! (CSS)/Deskripsi-Croissant.css"> <!-- Sambungkan dengan file CSS -->
+</head>
+<body>
+    <section class="Menu" id="menu">
+        <div class="Menu-container">
+          <div class="box">
+            <img src="../../assets/Croissant.png" alt="">
+            <h1>Croissant</h1>
+           <div class="isian">
+            <h2>
+              Bahan-bahan:
+            </h2>
+            <h4>
+             <ul style="list-style-type: circle">
+              <li>125 ml susu cair hangat.</li>
+              <li>100 gram gula.</li>
+              <li>1 sdt ragi instan.</li>
+              <li>544 gram tepung terigu.</li> 
+              <li>1 sdm garam.</li>
+              <li>339 gram mentega tawar.</li>
+             </ul>
+            </h4>
+           <br>
+           <h2>
+             Cara Membuat:
+            </h2>
+            <h4>
+             <ol>
+              <li>Aduk susu cair hangat, gula, dan ragi instan dalam mangkuk. Mikser selama lima menit atau sampai berbusa.</li>
+              <li>Tambahkan tepung terigu dan garam. Mikser dengan kecepatan rendah hingga adonan kalis elastis.</li>
+              <li>Pindahkan adonan ke permukaan meja yang sudah ditaburi dengan tepung terigu. Uleni selama dua menit.</li>
+              <li>Tambahkan tepung seperlunya untuk membuat adonan yang lembut.</li>
+              <li>Gilas adonan dengan tebal kira-kira dua cm. Bungkus dengan plastik pembungkus dan istirahatkan selama satu jam.</li>
+              <li>Setelah adonan dingin, susun mentega secara horizontal di atas adonan dan tumbuk mentega dengan gilingan.</li>
+              <li>Gulung adonan dan bentuk persegi panjang. Bungkus kembali adonan dan istirahatkan.</li>
+              <li>Buka kembali adonan dan gulung di atas meja yang sudah ditaburi dengan tepung. Bentuk persegi dengan panjang sekitar 25 cm.</li>
+              <li>Gilas adonan dan bentuk persegi. Tumpuk adonan dan gilas kembali.</li>
+              <li>Simpan di lemari pendingin adonan selama satu jam. Keluarkan dan istirahatkan adonan sejenak.</li>
+              <li>Kalau ada mentega yang masih terlihat, taburi dengan tepung dan lipat. Mentega yang bisa membuat adonan menjadi lengket.</li>
+              <li>Bungkus kembali adonan dalam wadah dengan plastic wrap. Istirahatkan dan dinginkan adonan selama delapan jam atau tidak lebih dari 18 jam karena adonan sudah tidak bisa lagi mengembang.</li>
+              <li>Keluarkan adonan dan lipat adonan berbentuk segitiga dengan ukuran yang diinginkan.</li>
+             </ol>
+            </h4>
+           </div>
+          </div>
+
+          <div class="Button">
+            <a href="../JunkCafe.html">--Back--</a>
+          </div>
+
+          <div class="Button">
+            <button type="submit" onclick="openPopup()">--Buy--</button>
+            
+           <div class="popup" id="popUp">
+
+            <img src="../../assets/tick.png">
+            <h2>Terima kasih telah membeli!</h2>
+            <p>Yukk, monggo di beli juga menu lainnya!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+           </div>
+          </div>
+          
+        </div>
+      </section>
+
+  <script>
+   let popup = document.getElementById("popUp");
+   
+   function openPopup(){
+    popup.classList.add("open-popup");
+   }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+   }
+
+  </script>    
+</body>
+</html>

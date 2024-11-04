@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <link rel="stylesheet" href="../CSS/Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bx-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Phone Number" required>
+                <i class='bx bx-phone-call'></i>
+            </div>
+            <div class="Gender">
+                <label><input type="radio" name="Gender" value="Laki-laki">Laki-laki</label>
+                <label><input type="radio" name="Gender" value="Perempuan">Perempuan</label>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password"  required>
+                <i class='bx bx-lock-open-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password"  required>
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+
+            <button type="submit" class="button" formaction="Form Login.html">Register</button>
+
+        </form>
+    </div>
+</body>
+</html>

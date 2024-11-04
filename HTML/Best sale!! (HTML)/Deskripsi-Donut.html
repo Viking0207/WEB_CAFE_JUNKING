@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Best sale!! (CSS)/Deskripsi-Donut.css"> <!-- Sambungkan dengan file CSS -->
+</head>
+<body>
+    <section class="Menu" id="menu">
+        <div class="Menu-container">
+          <div class="box">
+            <img src="../../assets/Donat.png" alt="">
+            <h1>Donut</h1>
+           <div class="isian">
+            <h2>
+              Bahan-bahan:
+            </h2>
+            <h4>
+             <ul style="list-style-type: circle">
+              <li>250 gr tepung terigu (merk apa aja bagus).</li>
+              <li>1/2 sct ragi instan, me: fermipan (-+5gr).</li>
+              <li>1 butir telur.</li>
+              <li>5 sendok gula pasir.</li> 
+              <li>1 sdm Margarin (jika mentega, tambahkan garam sedikit).</li>
+              <li>1/2 gelas Air matang.</li>
+              <li>Coklat (saya pakai cocolatos).</li>
+              <li>Minyak goreng.</li>
+             </ul>
+            </h4>
+           <br>
+           <h2>
+             Cara Membuat:
+            </h2>
+            <h4>
+             <ol>
+              <li>Campurkan air, fermipan, dan gula pasir 1sdm. Tunggu 15menit sampai berbusa.</li>
+              <li>Campurkan tepung terigu, telur, sisa gula pasir, dan campuran fermipan.</li>
+              <li>Uleni dengan tangan hingga setengah kalis, tambahkan margarin.</li>
+              <li>leni hingga kalis, lalu diamkan kurleb 1jam dengan ditutup kain bersih/serbet.</li>
+              <li>Setelah mengembang 2x lipat, uleni lagi/tekan2 agar udara keluar.</li>
+              <li>Setelah diuleni, cetak bulat2 sesuai selera. Diamkan 15 menit.</li>
+              <li>Setelah mengembang lg, cetak sesuai selera. Kemudian diamkan 15mnt.</li>
+              <li>Goreng dengan minyak jangan terlalu panas dan sebentar saja.</li>
+              <li>Angkat. Sajikan. Taburi gula halus untuk donat lubang atau toping selera.</li>
+              <li>Donat coklat siap untuk disajikan.</li>
+             </ol>
+            </h4>
+           </div>
+          </div>
+
+          <div class="Button">
+            <a href="../JunkCafe.html">--Back--</a>
+          </div>
+
+          <div class="Button">
+            <button type="submit" onclick="openPopup()">--Buy--</button>
+            
+           <div class="popup" id="popUp">
+
+            <img src="../../assets/tick.png">
+            <h2>Terima kasih telah membeli!</h2>
+            <p>Yukk, monggo di beli juga menu lainnya!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+           </div>
+          </div>
+          
+        </div>
+      </section>
+
+  <script>
+   let popup = document.getElementById("popUp");
+   
+   function openPopup(){
+    popup.classList.add("open-popup");
+   }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+   }
+
+  </script>    
+</body>
+</html>

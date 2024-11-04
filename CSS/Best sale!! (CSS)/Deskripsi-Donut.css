@@ -1,0 +1,220 @@
+ /* font */
+ .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* Font */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MerriWeather", sans-serif;
+}
+body {
+width: 100%;
+height: 150vh;
+background-image: url("../../assets/MenuImg.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+.heading h2{
+color: whitesmoke;
+font-size: 80px;
+padding: 25px;
+text-transform: uppercase;
+}
+
+
+.Menu .Menu-container .Button a{
+font-size: 22px;
+font-weight: 750;
+padding: 15px 35px;
+color: #574733;
+background: white;
+border: 3px solid #8a6f4d;
+border-radius: 15px;
+text-decoration: none;
+margin-left: -115%;
+box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+.Menu .Menu-container .Button a:hover{
+background: #8a6f4d;
+color: whitesmoke;
+transition: 0.2s all linear;
+}
+
+.Button{
+ margin-top: 57rem;
+}
+
+
+.Menu .Menu-container .Button button:nth-child(1){
+font-size: 22px;
+font-weight: 750;
+padding: 15px 40px;
+color: #574733;
+background: white;
+border: 3px solid #8a6f4d;
+border-radius: 15px;
+text-decoration: none;
+margin-left: -115%;
+margin-top: -1rem;
+box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+.Menu .Menu-container .Button button:nth-child(1):hover{
+background: #8a6f4d;
+color: whitesmoke;
+transition: 0.2s all linear;
+}
+
+
+.Button .popup{
+width: 400px;
+background: #fff;
+border-radius: 6px;
+position: absolute;
+/* top: 50%; */
+top: 0;
+left: 48.2%;
+transform: translate(-50%,-50%) scale(0.1);
+text-align: center;
+padding: 0 30px 30px;
+color: #333;
+visibility: hidden;
+transition: transform 0.4s, top 0.4s;
+}
+
+.Button .open-popup{
+visibility: visible;
+top: 101%;
+transform: translate(-50%,-50%) scale(1);
+}
+
+
+.Button .popup img{
+width: 130px;
+height: 130px;
+margin-top: -50px; 
+margin-left: 0px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Button .popup h2{
+font-size: 38px;
+font-weight: 500;
+margin: 30px 0 10px;
+}
+
+.Button .popup button{
+width: 100%;
+margin-top: 50px;
+padding: 10px 0;
+background-color: #6fd649;
+color: #fff;
+border: 0;
+outline: none;
+font-size: 18px;
+border-radius: 4px;
+cursor: pointer;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.Menu-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+gap: 1.5rem;
+margin-top: 50px;
+}
+
+.Menu-container .box{
+position: relative;
+padding: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-radius: 0.5rem;
+box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+width: 42rem;
+height: 56rem; 
+background: rgb(165, 162, 162);
+box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+margin-left: 280px;
+margin-top: -35px;
+}
+
+.Menu-container img{
+width: 60%;
+height: 250px;
+object-fit: contain;
+object-position: center;
+padding: 0px;
+background: #f1f1f1;
+border-radius: 0.5rem;
+margin-left: 7.5rem;
+margin-top: 0rem;
+}
+
+.Menu-container .box h1{
+font-size: 2.8rem;
+font-weight: 600;
+text-transform: uppercase;
+margin: 0.5rem 0 0.5rem;
+margin-top: 10px;
+margin-left: 210px;
+}
+
+.Menu-container .isian{
+margin-top: -5px;
+margin-left: 10px;
+}
+
+

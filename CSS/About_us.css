@@ -1,0 +1,118 @@
+.merriweather-light {
+
+  font-family: "Merriweather", serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+ 
+ .merriweather-regular {
+   font-family: "Merriweather", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .merriweather-bold {
+   font-family: "Merriweather", serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ .merriweather-black {
+   font-family: "Merriweather", serif;
+   font-weight: 900;
+   font-style: normal;
+ }
+ 
+ .merriweather-light-italic {
+   font-family: "Merriweather", serif;
+   font-weight: 300;
+   font-style: italic;
+ }
+ 
+ .merriweather-regular-italic {
+   font-family: "Merriweather", serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+ 
+ .merriweather-bold-italic {
+   font-family: "Merriweather", serif;
+   font-weight: 700;
+   font-style: italic;
+ }
+ 
+ .merriweather-black-italic {
+   font-family: "Merriweather", serif;
+   font-weight: 900;
+   font-style: italic;
+ }
+
+body {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 ;
+    font-size: 25px;
+  }
+  
+  main {
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .profile {
+    text-align: left;
+  }
+  
+  .profile img {
+    width: 500px;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Animasi untuk gambar */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile img:hover {
+    transform: scale(1.1);
+  }
+
+  .text-description h2{
+    margin-top: -32rem;
+    margin-left: 36rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+  }
+  .text-description p{
+    margin-left: 37rem;
+    font-size: 1.2rem;
+  }
+  p{
+    margin: 3px 0 5px;
+
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  

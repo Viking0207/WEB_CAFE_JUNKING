@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Best sale!! (CSS)/Deskripsi-Cappucino.css"> <!-- Sambungkan dengan file CSS -->
+</head>
+<body>
+    <section class="Menu" id="menu">
+        <div class="Menu-container">
+          <div class="box">
+            <img src="../../assets/Cappucino.jpg" alt="">
+            <h1>Cappucino</h1>
+           <div class="isian">
+              <h2>
+                Bahan-bahan:
+              </h2>
+              <h4>
+               <ul style="list-style-type: circle">
+                <li>3/4 cangkir kopi Prancis.</li>
+                <li>2 cangkir susu tawar.</li>
+                <li>2 sdm cokelat.</li>
+                <li>bubuk cokelat secukupnya.</li> 
+               </ul>
+              </h4>
+             <br>
+             <h2>
+               Cara Membuat:
+              </h2>
+              <h4>
+               <ol>
+                <li>Siapkan blender. Seduh kopi di dalam blender dengan air panas secukupnya.</li>
+                <li>Selanjutnya, nyalakan blender dan proses hingga kopi berbusa.</li>
+                <li>Panaskan susu dan cokelat di dalam wajan sampai mendidih. Jangan lupa untuk terus mengaduknya supaya susu tidak pecah dan cokelat tidak menggumpal.</li>
+                <li>Tuang susu cokelat tadi ke mangkuk. Setelah suhunya agak hangat, aduk menggunakan mixer sampai tercipta busa yang cukup banyak.</li>
+                <li>Tuang kopi ke dalam cangkir saji. Kemudian, tuang susu cokelat di atasnya.</li>
+                <li>Taburkan bubuk cokelat untuk mempercantik minuman ini.</li>
+               </ol>
+              </h4>
+           </div>
+          </div>
+
+          <div class="Button">
+            <a href="../JunkCafe.html">--Back--</a>
+          </div>
+
+          <div class="Button">
+            <button type="submit" onclick="openPopup()">--Buy--</button>
+            
+           <div class="popup" id="popUp">
+
+            <img src="../../assets/tick.png">
+            <h2>Terima kasih telah membeli!</h2>
+            <p>Yukk, monggo di beli juga menu lainnya!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+           </div>
+          </div>
+          
+        </div>
+      </section>
+
+  <script>
+   let popup = document.getElementById("popUp");
+   
+   function openPopup(){
+    popup.classList.add("open-popup");
+   }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+   }
+
+  </script>    
+</body>
+</html>

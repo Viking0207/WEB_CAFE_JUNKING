@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Best sale!! (CSS)/Deskripsi-Mocha.css"> <!-- Sambungkan dengan file CSS -->
+</head>
+<body>
+    <section class="Menu" id="menu">
+        <div class="Menu-container">
+          <div class="box">
+            <img src="../../assets/Mocha.png" alt="">
+            <h1>Mocha</h1>
+           <div class="isian">
+            <h2>
+              Bahan-bahan:
+            </h2>
+            <h4>
+             <ul style="list-style-type: circle">
+              <li>1 cangkir (8 ons) kopi kental yang diseduh.</li>
+              <li>2 sendok makan campuran coklat panas.</li>
+              <li>1 cangkir susu krim kocok dan sirup coklat untuk hiasan, opsional.</li>
+             </ul>
+            </h4>
+           <br>
+           <h2>
+             Cara Membuat:
+            </h2>
+            <h4>
+             <ol>
+              <li>Seduh 2 cangkir kopi kental (kekuatan ganda atau espresso).</li>
+              <li>Dalam stoples atau teko kaca, panaskan susu dalam microwave selama 30 detik. Jika menggunakan teknik mason jar, kencangkan tutupnya dan kocok toples kuat-kuat selama satu menit hingga berbusa. Ulangi sebanyak 3 kali (pemanasan 90 detik).</li>
+              <li>Untuk penyajian: Tambahkan 2 sendok makan campuran coklat panas ke dalam dua cangkir. Tuangkan kopi panas ke dalam mug, lalu aduk hingga coklat panas tercampur. Tuangkan susu berbusa secara perlahan ke atas kopi. Tambahkan krim kocok dan sirup coklat, jika diinginkan (sangat dianjurkan)!</li>
+              </ol>
+            </h4>
+           </div>
+          </div>
+
+          <div class="Button">
+            <a href="../JunkCafe.html">--Back--</a>
+          </div>
+
+          <div class="Button">
+            <button type="submit" onclick="openPopup()">--Buy--</button>
+            
+           <div class="popup" id="popUp">
+
+            <img src="../../assets/tick.png">
+            <h2>Terima kasih telah membeli!</h2>
+            <p>Yukk, monggo di beli juga menu lainnya!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+           </div>
+          </div>
+          
+        </div>
+      </section>
+
+  <script>
+   let popup = document.getElementById("popUp");
+   
+   function openPopup(){
+    popup.classList.add("open-popup");
+   }
+   function closePopup(){
+    popup.classList.remove("open-popup");
+   }
+
+  </script>    
+</body>
+</html>
