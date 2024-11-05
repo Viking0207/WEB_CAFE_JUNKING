@@ -197,185 +197,69 @@ header .yuusha h1{
 }
 
 /* Menu-Section */
-.Menu{
+.Menu {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../assets/MenuImg.jpeg");
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/MenuImg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- }
+}
 
-.heading h2{
+.Menu .heading h2 {
   color: whitesmoke;
   font-size: 65px;
   padding: 15px;
   text-transform: uppercase;
 }
 
-.Menu-container{
+.Menu-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin-top: 50px;
+  padding: 50px 20px; /* Tambahkan padding untuk memberi jarak */
 }
 
-/* box 1-4 */
-
-.Menu-container .box:nth-child(1){
+/* Box Style */
+.Menu-container .box {
   position: relative;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 50px;
-  margin-top: -50px;
+  background: rgb(165, 162, 162);
+  transition: transform 0.5s ease;
 }
 
-.Menu-container .box:nth-child(2){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 20px;
-  margin-top: -50px;
+.Menu-container .box:hover {
+  transform: scale(1.1);
 }
 
-.Menu-container .box:nth-child(3){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 8px;
-  margin-top: -50px;
-}
-
-.Menu-container .box:nth-child(4){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-right: 55px;
-  margin-top: -50px;
-}
-
-/* box 5-8 */
-
-.Menu-container .box:nth-child(5){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 50px;
-  margin-top: 5px;
-}
-
-.Menu-container .box:nth-child(6){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 20px;
-  margin-top: 5px;
-}
-
-.Menu-container .box:nth-child(7){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-left: 8px;
-  margin-top: 5px;
-}
-
-.Menu-container .box:nth-child(8){
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  width: 250px;
-  background: rgb(165, 162, 162);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  margin-right: 55px;
-  margin-top: 5px;
-}
-
-/* End box */
-
-.Menu-container img{
+.Menu-container img {
   width: 100%;
   height: 150px;
   object-fit: contain;
   object-position: center;
-  padding: 0px;
   background: #f1f1f1;
   border-radius: 0.5rem;
 }
 
-.Menu-container .box:hover{
-  transition: transform 0.5s ease;
-  transform: scale(1.1);
-}
-
-.Menu-container .box h3{
+.Menu-container .box h3 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0.5rem 0 0.5rem;
-  margin-top: 15px;
-  margin-left: 5px;
+  margin: 15px 5px 0.5rem;
 }
+
 .Menu-container .box .content {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
-.Menu-container .box .content span{
+
+.Menu-container .box .content span {
   padding: 0 1rem;
   color: whitesmoke;
   background: #8a6f4d;
@@ -384,7 +268,7 @@ header .yuusha h1{
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
 }
 
-.Menu-container .box .content a{
+.Menu-container .box .content a {
   padding: 0 1rem;
   color: black;
   background: white;
@@ -394,12 +278,14 @@ header .yuusha h1{
   margin-left: 18px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
 }
-.Menu-container .box .content a:hover{
+
+.Menu-container .box .content a:hover {
   background: #8a6f4d;
   color: whitesmoke;
   transition: 0.2s all linear;
 }
 
+/* Best Sell */
 .sell{
   width: 100%;
   height: 100vh;
@@ -408,6 +294,13 @@ header .yuusha h1{
   background-position: center;
   background-repeat: no-repeat;
  }
+
+.sell .heading h2 {
+  color: whitesmoke;
+  font-size: 65px;
+  padding: 15px;
+  text-transform: uppercase;
+}
 
 .Menu-sale{
   display: grid;
