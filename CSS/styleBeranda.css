@@ -1,53 +1,5 @@
 /* Font Awal */
-.merriweather-light {
-
-  font-family: "Merriweather", serif;
-   font-weight: 300;
-   font-style: normal;
- }
- 
- .merriweather-regular {
-   font-family: "Merriweather", serif;
-   font-weight: 400;
-   font-style: normal;
- }
- 
- .merriweather-bold {
-   font-family: "Merriweather", serif;
-   font-weight: 700;
-   font-style: normal;
- }
- 
- .merriweather-black {
-   font-family: "Merriweather", serif;
-   font-weight: 900;
-   font-style: normal;
- }
- 
- .merriweather-light-italic {
-   font-family: "Merriweather", serif;
-   font-weight: 300;
-   font-style: italic;
- }
- 
- .merriweather-regular-italic {
-   font-family: "Merriweather", serif;
-   font-weight: 400;
-   font-style: italic;
- }
- 
- .merriweather-bold-italic {
-   font-family: "Merriweather", serif;
-   font-weight: 700;
-   font-style: italic;
- }
- 
- .merriweather-black-italic {
-   font-family: "Merriweather", serif;
-   font-weight: 900;
-   font-style: italic;
- }
-/* Font Akhir */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
  margin: 0;
@@ -75,8 +27,10 @@ header{
 .navigation{
  position: relative;
  width: 100%;
- height: 90px;
- background-color: rgba(116, 111, 111, 0.495);
+padding: 0.8rem;
+ background-color: rgba(65, 61, 61, 0.699);
+ position: fixed;
+ z-index: 9999;
 }
 
 .navigation .box-navigation{
@@ -87,7 +41,7 @@ header{
 }
 
 .navigation .box-navigation .box:nth-child(1) h1{
- font-size: 50px;
+ font-size: 35px;
  margin-top: 8px;
  margin-left: 30px;
  color: whitesmoke;
@@ -109,7 +63,7 @@ header{
 
 .navigation .box-navigation .box:nth-child(2) ul li a{
  text-decoration: none;
- font-size: 28px;
+ font-size: 20px;
  color: whitesmoke;
  transition: all .4s ease;
 }
@@ -217,8 +171,28 @@ header .yuusha h1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  padding: 50px 20px; /* Tambahkan padding untuk memberi jarak */
+  padding: 20px 20px;
 }
+
+.Menu .add-content a {
+  padding: 0.3rem 1rem;
+  color: black;
+  background: white;
+  border: 2px solid #8a6f4d;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-left: 65rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  position: relative;
+  bottom: 1rem;
+}
+.Menu .add-content a:hover {
+  background: #8a6f4d;
+  color: whitesmoke;
+  transition: 0.2s all linear;
+}
+
+
 
 /* Box Style */
 .Menu-container .box {
